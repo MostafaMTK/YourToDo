@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your To Do</title>
+    <!-- For Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- For Icons -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- For Styles  -->
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="to-do">
+        <div class="to-do-list">
+          <h2>Your To Do</h2>
+          <div class="error"></div>
+          <div class="input">
+            <input
+              type="text"
+              name="task"
+              id="task"
+              placeholder="Add new task"
+            />
+            <button><i class="fa-solid fa-plus"></i></button>
+          </div>
+          <div class="filters">
+            <input type="radio" name="filter" id="all" required checked />
+            <label for="all">
+              <i class="fa-solid fa-list"></i>
+              All
+            </label>
+            <input type="radio" name="filter" id="done" value="card" required />
+            <label for="done">
+              <i class="fa-solid fa-check-double"></i>
+              Done
+            </label>
+            <input type="radio" name="filter" id="todo" value="card" required />
+            <label for="todo">
+              <i class="fa-regular fa-hourglass"></i>
+              To Do
+            </label>
+          </div>
+          <div class="list">
+            <ul></ul>
+            <p class="remaining">Your remaining todos: <span>0</span></p>
+          </div>
+          <div class="save">
+            <button><i class="fa-solid fa-floppy-disk"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
