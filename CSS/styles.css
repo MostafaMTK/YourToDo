@@ -193,7 +193,7 @@ ul {
   transition: var(--main-transition-duration);
   font-size: 16px;
 }
-.container .to-do .to-do-list .list ul li button {
+.container .to-do .to-do-list .list ul li button i {
   transition: var(--main-transition-duration);
 }
 .container .to-do .to-do-list .list ul li button:hover {
@@ -305,6 +305,9 @@ ul {
   cursor: pointer;
   transition: var(--main-transition-duration);
 }
+.container .to-do .to-do-list .save button i {
+  transition: var(--main-transition-duration);
+}
 .container .to-do .to-do-list .save button:hover {
   transform: translateY(-8px);
   width: 65%;
@@ -312,6 +315,9 @@ ul {
   background-color: var(--light-gray-2);
   color: rgb(19, 135, 224);
   border-color: rgb(19, 135, 224);
+}
+.container .to-do .to-do-list .save button:hover i {
+  animation: right-left 1s infinite both linear;
 }
 .hidden {
   display: none !important;
