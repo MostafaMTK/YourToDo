@@ -119,9 +119,6 @@ const loadData = function () {
 };
 loadData();
 addBtn.addEventListener('click', addTask);
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Enter' && inputData !== '') addTask();
-});
 document.querySelector('.filters #all').addEventListener('click', showAll);
 document.querySelector('.filters #done').addEventListener('click', function () {
   document.querySelectorAll('.done-li').forEach(function (item) {
