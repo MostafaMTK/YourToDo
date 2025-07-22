@@ -11,7 +11,8 @@ const showAll = function () {
     item.classList.remove('hidden');
   });
 };
-const addTask = function () {
+const addTask = function (e) {
+  e.preventDefault();
   if (inputData.value === '') {
     const error = document.querySelector('.error');
     error.classList.add('show-error');
